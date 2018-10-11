@@ -58,6 +58,7 @@
         justify-content: flex-end;
     }
 }
+
 //o-contact-info
 
 .o-info-item {
@@ -75,12 +76,14 @@
         margin-right: 10px;
         color: $brand-primary;
     }
-    >.o-info-wrapper{
+
+    >.o-info-wrapper {
         @include media-breakpoint-up(md) {
             margin-right: 50px;
         }
     }
 }
+
 //o-info-item
 
 .o-info-wrapper {
@@ -96,4 +99,43 @@
         color: #333;
     }
 }
+
 //o-info-wrapper
+
+
+.o-toogler-menu {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.1);
+
+    @include media-breakpoint-up(md) {
+        color: rgba(255, 255, 255, 0.5);
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+
+    >.navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+
+        @include media-breakpoint-up(md) {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+        }
+    }
+}
+
+//o-tootler-menu
+
+.o-mobile-logo {
+    >.logo {
+        display: block;
+        margin: 0 auto;
+        height: 40px;
+        width: auto;
+    }
+}
+
+// o-mobile-logo
+
+.o-mobile-icon {
+    font-size: 1.8rem;
+    color: $brand-primary;
+    display: block;
+}
