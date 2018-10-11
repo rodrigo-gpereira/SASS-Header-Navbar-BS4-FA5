@@ -40,21 +40,17 @@ body {
         background: #fff;
     }
 
-    >.l-top-bar {
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        content: "";
+        background: $brand-primary;
+    }
 
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            content: "";
-            background: $brand-primary;
-        }
-
-    } //l-top-bar
-
-    .l-top-angle {
+    .l-top-bar {
         position: relative;
         z-index: 2;
         padding: 9px 0 3px;
