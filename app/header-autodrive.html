@@ -14,7 +14,9 @@
 
 <body>
 
-    <header class="c-header-01 --bg_dark">
+    <header class="c-header-01">
+
+        <!-- Inicio do Layout Top Bar-->
         <div class="l-top-bar">
             <div class="container">
                 <div class="row justify-content-end">
@@ -22,7 +24,7 @@
                         <div class="o-time">
                             <i class="far fa-clock"></i> <span> Seg - Sab 8:00 - 18:00</span>
                         </div>
-                    </div> <!-- Col End -->
+                    </div> <!-- //Col End -->
                     <div class="col-md-3 col-sm-5">
                         <ul class="o-social-list">
                             <li class="icon"><a class="icon-link" href="#"><i class="fab fa-facebook"></i></a></li>
@@ -30,10 +32,90 @@
                             <li class="icon"><a class="icon-link" href="#"><i class="fab fa-google-plus"></i></a></li>
                             <li class="icon"><a class="icon-link" href="#"><i class="fab fa-instagram"></i></a></li>
                         </ul>
+                    </div> <!-- //Col End -->
+                </div> <!-- //Row End -->
+            </div> <!-- //Container End -->
+        </div><!-- //Layout Top Bar -->
+
+        <!-- Inicio do Layout Logo Area-->
+        <div class="l-logo-area">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-sm-6 col-md-3 ">
+                        <a class="o-logo" href="#">
+                            <img class="logo-img" src="/images/autodrive_logo.png" alt="logo">
+                        </a>
+                    </div> <!-- Col End -->
+                    <div class="col-6 col-sm-6 col-md-9">
+                        <ul class="o-contact-info">
+                            <li class="o-info-item">
+                                <span class="icon"><i class="fas fa-phone"></i></span>
+                                <div class="o-info-wrapper">
+                                    <p class="title">Ligue</p>
+                                    <p class="subtitle">11 2002-2002</p>
+                                </div>
+                            </li> <!-- li End -->
+                            <li class="o-info-item">
+                                <span class="icon"><i class="fas fa-envelope"></i></span>
+                                <div class="o-info-wrapper">
+                                    <p class="title">Email</p>
+                                    <p class="subtitle">contato@autodrive.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-primary"><i class="fab fa-whatsapp"></i> WhastApp</a>
+                            </li> <!-- Li End -->
+                        </ul>
                     </div> <!-- Col End -->
                 </div> <!-- Row End -->
             </div> <!-- Container End -->
-        </div><!-- top-angle -->
+        </div><!-- Layout Logo-area -->
+
+        <div class="l-nav-area">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <div class="col d-flex d-lg-none">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarDropdown"
+                            aria-controls="navbarDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <div class="col-5 d-block d-md-none">
+                        <a href="#" class="">
+                            <img src="/images/autodrive_logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col d-block d-md-none text-right">
+                        <a href="#" class=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Disabled</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div><!-- Layout nav-area -->
     </header>
 
 
@@ -43,9 +125,9 @@
     <script type="text/javascript" src="js/main.js"></script>
     <!-- endbuild -->
 
-    <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
     <script type="text/javascript" src="vendor/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/popper.min.js"></script>
+    <script type="text/javascript" src="vendor/bootstrap.min.js"></script>
 
 </body>
 
