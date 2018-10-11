@@ -1,5 +1,13 @@
-$bg-color:  #015564;
+// Bootstrap Full
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// // Bootstrap Grid e Reboot
+//@import "../node_modules/bootstrap/scss/bootstrap-grid.scss";
+//@import "../node_modules/bootstrap/scss/bootstrap-reboot.scss";
+
+
+$bg-color:  #0b5a69;
 
 body{
-    background-color: $bg-color; 
-} 
+    background-color: $bg-color;  
+}  

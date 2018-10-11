@@ -91,7 +91,7 @@ gulp.task('clean:dist', function () {
 
 //Tarefa do Watch
 gulp.task('watch', ['browserSync', 'sass'], function () {
-    gulp.watch("sass/**/*.scss", ['sass'])
+    gulp.watch("app/scss/**/*.scss", ['sass'])
 })
 
 //Executar tarefas de Desenvolvimento
