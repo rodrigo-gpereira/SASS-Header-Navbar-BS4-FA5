@@ -69,7 +69,7 @@ gulp.task('fontsApp', function () {
 })
 
 //Copiar os arquivos de distribuição das dependencias
-gulp.task('devDepsJs', () =>{
+gulp.task('devDepsJs', () => {
     return gulp.src([
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
