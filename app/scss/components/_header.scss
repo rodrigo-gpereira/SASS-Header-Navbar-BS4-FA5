@@ -168,14 +168,17 @@
 
 
 .c-navbar-list {
-    margin: 10px 0 0;
+    margin: 15px 15px 5px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         margin: 0;
+        margin-left: auto !important;
     }
 
     >.nav-item {
-        @include media-breakpoint-up(md) {
+        position: relative;
+
+        @include media-breakpoint-up(lg) {
             margin-right: 10px;
 
             &:last-child {
@@ -195,8 +198,8 @@
         }
     }
 
-    >.nav-item.active>.nav-link {
-        &:before {
+    >.nav-item.active {
+        &:after {
             opacity: 1;
             visibility: visible;
             -webkit-transform: scale(1);
@@ -204,9 +207,19 @@
         }
     }
 
+    >.nav-item:hover {
+        @include media-breakpoint-up(lg) {
+            &:after {
+                opacity: 1;
+                visibility: visible;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+
     >.nav-item.active>.nav-link {
         background-color: theme-color("primary");
-        ;
         color: #fff;
     }
 
@@ -222,24 +235,31 @@
         }
     }
 
-    >.nav-item:hover>.nav-link:before {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        content: "";
-        background: #fff;
-        width: 100%;
-        height: 4px;
-        opacity: 0;
-        visibility: hidden;
-        -webkit-transform: scale(0);
-        transform: scale(0);
-        -webkit-transition: all ease .5s;
-        transition: all ease .5s;
+    >.nav-item:after {
+
+        @include media-breakpoint-up(lg) {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            content: "";
+            background: $white;
+            width: 100%;
+            height: 4px;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: scale(0);
+            transform: scale(0);
+            -webkit-transition: all ease .5s;
+            transition: all ease .5s;
+        }
     }
 }
 
 .c-dropdown {
+    background: gray("200");
+    @include media-breakpoint-up(md) {
+        background:$white;
+    }
     padding: 0px;
 
     >.dropdown-item {

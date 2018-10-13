@@ -1,13 +1,14 @@
 @each $color, $value in $theme-colors {
     .btn-#{$color} {
+        position: relative;
         &:after {
             content: "";
             display: block;
             border-top: 10px solid transparent;
             border-bottom: 10px solid white;
             border-left: 10px solid transparent;
-            bottom: 8px;
-            right: 15px;
+            bottom: -1px;
+            right: -1px;
             position: absolute;
             z-index: 2;
         }
