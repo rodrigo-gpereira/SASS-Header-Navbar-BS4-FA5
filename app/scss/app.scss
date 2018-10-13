@@ -12,6 +12,7 @@ $fa-font-path: "../fonts/fontawesome-free/webfonts";
 
 @import "custombs4";
 
+
 // Bootstrap Full
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
@@ -21,8 +22,12 @@ $fa-font-path: "../fonts/fontawesome-free/webfonts";
 @import "mixins";
 @import "utils";
 
+
 @import "base";
-@import "objects/header-objects";
+@import "objects/o-header";
+@import "objects/o-buttons";
+
+
 @import "components/header"; 
 
 

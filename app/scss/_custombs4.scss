@@ -1,1 +1,18 @@
-$primary: #df402b !default;
+//
+// Color system
+//
+
+$primary:       #dd1313;
+$secondary:     #0A090C;
+$tertiary:      #020122;
+$quaternary:    #07393C;  
+
+$theme-colors: (
+  "tertiary": $tertiary,
+  "quaternary": $quaternary
+);
+
+
+// Options
+
+$enable-rounded: false;

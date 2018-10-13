@@ -1,0 +1,15 @@
+@each $color, $value in $theme-colors {
+    .btn-#{$color} {
+        &:after {
+            content: "";
+            display: block;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid white;
+            border-left: 10px solid transparent;
+            bottom: 8px;
+            right: 15px;
+            position: absolute;
+            z-index: 2;
+        }
+    }
+}

@@ -34,13 +34,10 @@
 
 .o-logo {
     >.logo-img {
-        max-height: 48px;
-        margin: 10px auto;
-        display: block;
-
         @include media-breakpoint-up(sm) {
             max-height: 68px;
-            margin: 10px 0;
+            margin: 5px auto;
+            display: block;
         }
     }
 }
@@ -74,7 +71,7 @@
         top: -7px;
         font-size: 28px;
         margin-right: 10px;
-        color: $brand-primary;
+        color: $primary;
     }
 
     >.o-info-wrapper {
@@ -136,6 +133,6 @@
 
 .o-mobile-icon {
     font-size: 1.8rem;
-    color: $brand-primary;
+    color: $primary;
     display: block;
 }
