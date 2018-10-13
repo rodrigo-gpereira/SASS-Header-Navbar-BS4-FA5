@@ -10605,53 +10605,54 @@ body {
   .c-header-01.--bg_dark:before {
     background: #333; }
 
-@media (max-width: 991.98px) {
-  .c-navbar-list {
-    margin: 20px 0; } }
-
-@media (min-width: 768px) {
-  .c-navbar-list > .nav-item {
-    margin-right: 10px; }
-    .c-navbar-list > .nav-item:last-child {
-      margin-right: 0px; } }
-
-.c-navbar-list > .nav-item > .nav-link {
-  padding: 16px 10px;
-  display: block;
-  position: relative;
-  color: #333; }
+.c-navbar-list {
+  margin: 10px 0 0; }
   @media (min-width: 768px) {
-    .c-navbar-list > .nav-item > .nav-link {
-      color: #fff; } }
-
-.c-navbar-list > .nav-item.active > .nav-link:before {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-  transform: scale(1); }
-
-.c-navbar-list > .nav-item.active > .nav-link {
-  background-color: #dd1313;
-  color: #fff; }
-
-@media (min-width: 768px) {
-  .c-navbar-list > .nav-item > .nav-link:before {
+    .c-navbar-list {
+      margin: 0; } }
+  @media (min-width: 768px) {
+    .c-navbar-list > .nav-item {
+      margin-right: 10px; }
+      .c-navbar-list > .nav-item:last-child {
+        margin-right: 0px; } }
+  .c-navbar-list > .nav-item > .nav-link {
+    padding: 16px 10px;
+    display: block;
+    position: relative;
+    color: #333; }
+    @media (min-width: 768px) {
+      .c-navbar-list > .nav-item > .nav-link {
+        color: #fff; } }
+  .c-navbar-list > .nav-item.active > .nav-link:before {
     opacity: 1;
     visibility: visible;
     -webkit-transform: scale(1);
-    transform: scale(1); } }
+    transform: scale(1); }
+  .c-navbar-list > .nav-item.active > .nav-link {
+    background-color: #dd1313;
+    color: #fff; }
+  @media (min-width: 768px) {
+    .c-navbar-list > .nav-item > .nav-link:before {
+      opacity: 1;
+      visibility: visible;
+      -webkit-transform: scale(1);
+      transform: scale(1); } }
+  .c-navbar-list > .nav-item:hover > .nav-link:before {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    content: "";
+    background: #fff;
+    width: 100%;
+    height: 4px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all ease .5s;
+    transition: all ease .5s; }
 
-.c-navbar-list > .nav-item:hover > .nav-link:before {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  content: "";
-  background: #fff;
-  width: 100%;
-  height: 4px;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: all ease .5s;
-  transition: all ease .5s; }
+.c-dropdown {
+  padding: 0px; }
+  .c-dropdown > .dropdown-item {
+    padding: 1rem; }
