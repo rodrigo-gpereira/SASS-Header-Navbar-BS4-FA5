@@ -17,14 +17,19 @@ Modelos disponíveis
 ---
 * [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html)
 
+![Auto Drive md-01 xs-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-xs.png)
+![Auto Drive md-01 sm-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-sm.png)
+![Auto Drive md-01 md-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-md.png)
+![Auto Drive md-01 lg-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-lg.png)
+
 *aos poucos vou disponibilizando novos modelos*
 
 
 Desenvolva com este pacote
 ---
 
-* Clone este repositrio: git clone https://github.com/digoartmusic/SASS-Header-Navbar-BS4-FA5.git
-* Instale as dependências com [NPM](https://www.npmjs.com/?target=_blank) `npm install`
+* Clone este repositrio: git clone `https://github.com/digoartmusic/SASS-Header-Navbar-BS4-FA5.git`
+* Instale as dependências com [NPM](https://www.npmjs.com) `npm install`
 * Navegue até a pasta do repositório e execute o comando `gulp` para iniciar o ambiente de desenvolvimento
 * Comando adicionais
   * `gulp build` para gerar a pasta de distruição com o Bootstrap 4.1 e FontAwesome 5.3.1 compilados
@@ -55,8 +60,8 @@ Links úteis
 ---
 
 * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-* [NPM](https://www.npmjs.com/)
-* [GulpJs](https://gulpjs.com/)
+* [NPM](https://www.npmjs.com)
+* [GulpJs](https://gulpjs.com)
 * [BrowserSync](https://browsersync.io/docs/)
 
 
