@@ -6,7 +6,7 @@ Modelos de Header e Navbar para inserir em seus projetos com Bootstrap 4.1 e Fon
 Projeto
 ---
 
-O projeto consiste em manter base para temas em bootstrap 4.1 com foco em ampliar as opções de Header e Navbar sendo que as modificações são efetuadas seguindo a [documentaço de tematização do Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/theming/)
+O projeto consiste em manter base para temas em bootstrap 4.1 com foco em ampliar as opções de Header e Navbar sendo que as modificações são efetuadas seguindo a [documentaço de tematização do Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/theming/?target=_blank)
 
 Priorizo o modelo **mobile-first**
 
@@ -15,7 +15,7 @@ Os headers na versão *xs/sm* são pensados para ocupar o mínimo de espaço em 
 
 Modelos disponíveis
 ---
-* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html)
+* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html/?target=_blank)
 
 *aos poucos vou disponibilizando novos modelos*
 
@@ -24,7 +24,7 @@ Desenvolva com este pacote
 ---
 
 * Clone este repositrio: git clone https://github.com/digoartmusic/SASS-Header-Navbar-BS4-FA5.git
-* Instale as dependências com [NPM](https://www.npmjs.com/) `npm install`
+* Instale as dependências com [NPM](https://www.npmjs.com/?target=_blank) `npm install`
 * Navegue até a pasta do repositório e execute o comando `gulp` para iniciar o ambiente de desenvolvimento
 * Comando adicionais
   * `gulp build` para gerar a pasta de distruição com o Bootstrap 4.1 e FontAwesome 5.3.1 compilados
@@ -54,9 +54,9 @@ OBRIGADO
 Links úteis
 ---
 
-* https://getbootstrap.com/docs/4.1/getting-started/introduction/
-* https://www.npmjs.com/
-* https://gulpjs.com/
-* https://browsersync.io/docs
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/?target=_blank)
+* [NPM](https://www.npmjs.com/?target=_blank)
+* [GulpJs](https://gulpjs.com/?target=_blank)
+* [BrowserSync](https://browsersync.io/docs?target=_blank)
 
 
