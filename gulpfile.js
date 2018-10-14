@@ -2,6 +2,7 @@
 
 const gulp = require('gulp'),
     sass = require('gulp-sass'),
+    sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync'),
     //Agrupa os arquivos para realizar o build
     useref = require('gulp-useref'),
@@ -20,7 +21,9 @@ const gulp = require('gulp'),
 //Configurar o Sass
 gulp.task('sass', function () {
     return gulp.src('src/scss/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass())
+        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream())
 })
