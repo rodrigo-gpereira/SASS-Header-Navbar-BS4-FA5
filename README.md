@@ -15,7 +15,7 @@ Os headers na versão *xs/sm* são pensados para ocupar o mínimo de espaço em 
 
 Modelos disponíveis
 ---
-* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html/)
+* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html)
 
 *aos poucos vou disponibilizando novos modelos*
 
