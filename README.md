@@ -15,15 +15,13 @@ Os headers na versão *xs/sm* são pensados para ocupar o mínimo de espaço em 
 
 Modelos disponíveis
 ---
-* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html)
 
-![Auto Drive md-01 xs-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-xs.png)
-![Auto Drive md-01 sm-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-sm.png)
-![Auto Drive md-01 md-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-md.png)
-![Auto Drive md-01 lg-view](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/src/ex-img/auto01-lg.png)
+**[Modelo Automotivo-01](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html)**
+<p align="center">
+  <img src="https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/docs/images/auto01-lg.png" alt="Auto Drive md-01 lg-view"/>
+</p>
 
 *aos poucos vou disponibilizando novos modelos*
-
 
 Desenvolva com este pacote
 ---
