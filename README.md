@@ -18,7 +18,7 @@ Modelos disponíveis
 
 **[Modelo Automotivo-01](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html)**
 <p align="center">
-  <img src="https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/docs/images/auto01-lg.png" alt="Auto Drive md-01 lg-view"/>
+  <img src="https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/docs/images/auto01.gif" alt="Auto Drive md-01 lg-view"/>
 </p>
 
 *aos poucos vou disponibilizando novos modelos*
