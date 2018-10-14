@@ -6,7 +6,7 @@ Modelos de Header e Navbar para inserir em seus projetos com Bootstrap 4.1 e Fon
 Projeto
 ---
 
-O projeto consiste em manter base para temas em bootstrap 4.1 com foco em ampliar as opções de Header e Navbar sendo que as modificações são efetuadas seguindo a [documentaço de tematização do Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/theming/?target=_blank)
+O projeto consiste em manter base para temas em bootstrap 4.1 com foco em ampliar as opções de Header e Navbar sendo que as modificações são efetuadas seguindo a [documentaço de tematização do Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/theming/)
 
 Priorizo o modelo **mobile-first**
 
@@ -15,7 +15,7 @@ Os headers na versão *xs/sm* são pensados para ocupar o mínimo de espaço em 
 
 Modelos disponíveis
 ---
-* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html/?target=_blank)
+* [Modelo Automotivo](https://digoartmusic.github.io/SASS-Header-Navbar-BS4-FA5/dist/header-autodrive.html/)
 
 *aos poucos vou disponibilizando novos modelos*
 
@@ -54,9 +54,9 @@ OBRIGADO
 Links úteis
 ---
 
-* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/?target=_blank)
-* [NPM](https://www.npmjs.com/?target=_blank)
-* [GulpJs](https://gulpjs.com/?target=_blank)
-* [BrowserSync](https://browsersync.io/docs?target=_blank)
+* [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
+* [NPM](https://www.npmjs.com/)
+* [GulpJs](https://gulpjs.com/)
+* [BrowserSync](https://browsersync.io/docs/)
 
 
