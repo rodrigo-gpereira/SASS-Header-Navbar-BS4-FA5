@@ -10290,7 +10290,7 @@ a.text-quaternary:hover, a.text-quaternary:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
-.u-reset-ul, .o-social-list, .o-contact-info {
+.u-reset-ul, .o-social-list, .o-contact-info, .o-social-nav {
   list-style: none;
   padding: 0px;
   margin: 0px; }
@@ -10691,14 +10691,87 @@ body {
   .c-dropdown > .dropdown-item {
     padding: 1rem; }
 
-svg > .svg-dotcom-rect {
+.l-header-02 > .l-logo-area {
+  height: 60px;
+  background-color: #020122; }
+
+.l-header-02 > .l-logo-area .c-logo-img {
+  height: 60px; }
+
+.l-header-02 > .l-nav-area {
+  position: relative;
+  background-color: #dd1313; }
+  @media (min-width: 576px) {
+    .l-header-02 > .l-nav-area {
+      background-color: transparent; } }
+
+.l-header-02 > .l-nav-area .angle-bar {
+  position: relative;
+  height: 50px;
+  background-color: #dd1313; }
+  @media (min-width: 576px) {
+    .l-header-02 > .l-nav-area .angle-bar:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -20px;
+      width: 40px;
+      height: 100%;
+      background: #dd1313;
+      transform: skewX(37deg);
+      z-index: -1; } }
+  @media (min-width: 576px) {
+    .l-header-02 > .l-nav-area .angle-bar:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -20px;
+      width: 40px;
+      height: 100%;
+      background: #dd1313;
+      transform: skewX(-37deg);
+      z-index: -1; } }
+
+.c-logo-img {
+  display: block; }
+  .c-logo-img > .o-logo-autodrive {
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 10px 0; }
+
+.o-logo-svg {
+  margin: 0 auto;
+  height: inherit;
+  display: block; }
+
+.o-social-nav {
+  display: flex;
+  justify-content: center; }
+  .o-social-nav > .icon {
+    padding: 0 .5em; }
+
+.o-logo-autodrive > .svg-dotcom-rect {
   fill: #dd1313; }
 
-svg > .svg-dotcom-text {
+.o-logo-autodrive > .svg-dotcom-text {
   fill: #fff; }
 
-svg > .svg-ad-text {
+.o-logo-autodrive > .svg-ad-text {
   fill: #020122; }
 
-svg > .svg-car {
+.o-logo-autodrive > .svg-car {
+  fill: #dd1313; }
+
+.o-logo-autodrive.--light > .svg-dotcom-rect {
+  fill: #dd1313; }
+
+.o-logo-autodrive.--light > .svg-dotcom-text {
+  fill: #fff; }
+
+.o-logo-autodrive.--light > .svg-ad-text {
+  fill: #fff; }
+
+.o-logo-autodrive.--light > .svg-car {
   fill: #dd1313; }

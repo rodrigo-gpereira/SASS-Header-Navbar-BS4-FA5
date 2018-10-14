@@ -1,15 +1,35 @@
- svg>.svg-dotcom-rect {
-     fill: theme-color("primary");
- }
+.o-logo-autodrive {
+    >.svg-dotcom-rect {
+        fill: theme-color("primary");
+    }
 
- svg>.svg-dotcom-text {
-     fill: $white;
- }
+    >.svg-dotcom-text {
+        fill: $white;
+    }
 
- svg>.svg-ad-text {
-     fill: theme-color("secondary");
- }
+    >.svg-ad-text {
+        fill: theme-color("secondary");
+    }
 
- svg>.svg-car {
-     fill: theme-color("primary");
- }
+    >.svg-car {
+        fill: theme-color("primary");
+    }
+}
+
+.o-logo-autodrive.--light {
+    >.svg-dotcom-rect {
+        fill: theme-color("primary");
+    }
+
+    >.svg-dotcom-text {
+        fill: $white;
+    }
+
+    >.svg-ad-text {
+        fill: $white;;
+    }
+
+    >.svg-car {
+        fill: theme-color("primary");
+    }
+}
