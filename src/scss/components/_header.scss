@@ -1,5 +1,5 @@
 //Header 01
-.c-header-01 {
+.l-header-01 {
     position: relative;
     color: white;
     background-color: #fff;
@@ -145,11 +145,19 @@
     }
 
     >.l-nav-area>.navbar {
-        padding: .5rem 0;
+        padding: 0;
 
         @include media-breakpoint-up(lg) {
             height: 56px;
         }
+    }
+
+    >.l-nav-area .c-logo-img {
+        height: 60px;
+    }
+
+    >.l-nav-area .o-toogler-menu {
+        margin: 8px;
     }
 
     // variants - c-header-01
@@ -275,37 +283,74 @@
 .l-header-02 {
 
     >.l-logo-area {
-        height: 60px;
+        padding:10px 0;
         background-color: theme-color("secondary");
+        @include media-breakpoint-up(sm){
+            padding: 0px;
+        }
     }
 
     >.l-logo-area .c-logo-img {
         height: 60px;
     }
 
+    >.l-logo-area .c-contact-top{
+        color: gray("400");
+    }
+
+    >.l-logo-area .c-social-nav{
+        >.icon >.icon-link{
+        color: gray("400");
+        }
+    }
+
     >.l-nav-area {
         position: relative;
-        background-color: theme-color("primary");
+        background-color:$white;
 
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             background-color: transparent;
         }
     }
 
-    >.l-nav-area .angle-bar {
+    >.l-nav-area .c-logo-img {
+        height: 60px;
+    }
+
+    >.l-nav-area .c-logo-img >.o-logo-svg{
+        margin-left: auto;
+        margin-right: 0px;
+    }
+
+    >.l-nav-area .angle-bar{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    >.l-nav-area .angle-bar__inner {
         position: relative;
-        height: 50px;
-        background-color: theme-color("primary");
+        margin: 0 auto;
+        background-color: $white;
+
+        @include media-breakpoint-up(sm) {
+        }
+
+        @include media-breakpoint-up(md){
+            width: 85%;
+
+            background-color: theme-color("primary");
+        }
 
         &:before {
-            @include media-breakpoint-up(sm) {
+            @include media-breakpoint-up(md) {
                 content: '';
                 display: block;
                 position: absolute;
                 top: 0;
-                left: -20px;
-                width: 40px;
+                left: -30px;
+                width: 60px;
                 height: 100%;
+                max-height: 56px;
                 background: theme-color("primary");
                 transform: skewX(37deg);
                 z-index: -1;
@@ -313,20 +358,29 @@
         }
 
         &:after {
-            @include media-breakpoint-up(sm) {
+            @include media-breakpoint-up(md) {
                 content: '';
                 display: block;
                 position: absolute;
                 top: 0;
-                right: -20px;
-                width: 40px;
+                right: -30px;
+                width: 60px;
                 height: 100%;
+                max-height: 56px;
                 background: theme-color("primary");
                 transform: skewX(-37deg);
                 z-index: -1;
             }
         }
 
+    }
+
+    >.l-nav-area .navbar{
+            padding:0px;
+    }
+
+    >.l-nav-area .o-toogler-menu {
+        margin: 8px;
     }
 
 }
@@ -347,9 +401,8 @@
 }
 
 
-.o-social-nav {
+.c-social-nav {
     display: flex;
-    justify-content: center;
     @extend .u-reset-ul;
 
     >.icon {
@@ -357,4 +410,20 @@
     }
 }
 
-//o-social-list
+.c-social-nav.--lg{
+    >.icon{
+        font-size: $font-size-lg;
+        padding: 0 .5em;
+    }
+}
+
+.c-social-nav.--light{
+    >.icon >.icon-link{
+        color:$white;
+    }
+}
+
+.c-contact-top{
+    margin: 0;
+    font-weight: $font-weight-bold;
+}
