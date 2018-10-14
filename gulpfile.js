@@ -78,10 +78,16 @@ gulp.task('devDepsJs', () => {
     .pipe(gulp.dest('src/vendor'))
 })
 
-//Copiar arquivos de fontAwesome para Dev
+//Copiar arquivos de fontAwesome para Dist
 gulp.task('fontsDist', function () {
     return gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
+})
+
+//Copiar arquivos de vendors para Dist
+gulp.task('vendorDist', function () {
+    return gulp.src('src/vendor/**/*')
+        .pipe(gulp.dest('dist/vendor'))
 })
 
 //Deletar arquivos para reconstruir o build
@@ -104,7 +110,7 @@ gulp.task('default', function (callback) {
 //Executar o Build
 gulp.task('build', function (callback) {
     runSequence('clean:dist',
-        ['sass', 'useref', 'images', 'fontsDist'],
+        ['sass', 'useref', 'images', 'fontsDist', 'vendorDist'],
         callback
     )
 })
