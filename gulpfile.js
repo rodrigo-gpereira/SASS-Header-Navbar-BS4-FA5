@@ -19,30 +19,30 @@ const gulp = require('gulp'),
 
 //Configurar o Sass
 gulp.task('sass', function () {
-    return gulp.src('app/scss/**/*.scss')
+    return gulp.src('src/scss/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('src/css'))
         .pipe(browserSync.stream())
 })
 
 // Configurar Browser Sync
 gulp.task('browserSync', function () {
     const files = [
-        './app/css/app.css',
-        './app/js/**/*.js',
-        './app/**/*.html'
+        './src/css/app.css',
+        './src/js/**/*.js',
+        './src/**/*.html'
     ];
     //subir o server do Browser Sync
     browserSync.init(files, {
         server: {
-            baseDir: 'app'
+            baseDir: 'src'
         },
     })
 })
 
 //Realizar o Build do pacote
 gulp.task('useref', function () {
-    return gulp.src('app/*.html')
+    return gulp.src('src/*.html')
         .pipe(useref())
         // Minifica apenas se for um arquivo JavaScript
         .pipe(gulpIf('*.js', uglify()))
@@ -53,7 +53,7 @@ gulp.task('useref', function () {
 
 //Otimização de Imagens
 gulp.task('images', function () {
-    return gulp.src('app/images/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('src/images/**/*.+(png|jpg|gif|svg)')
         // .pipe(cache - Realiza o cache das imagens
         .pipe(cache(imagemin({
             // imagens entrelaçadas
@@ -65,7 +65,7 @@ gulp.task('images', function () {
 //Copiar arquivos de fontAwesome para Dev
 gulp.task('fontsApp', function () {
     return gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
-        .pipe(gulp.dest('app/fonts/fontawesome-free/webfonts/'))
+        .pipe(gulp.dest('src/fonts/fontawesome-free/webfonts/'))
 })
 
 //Copiar os arquivos de distribuição das dependencias
@@ -75,12 +75,12 @@ gulp.task('devDepsJs', () => {
         'node_modules/bootstrap/dist/js/bootstrap.min.js',
         'node_modules/popper.js/dist/umd/popper.min.js',
     ])
-    .pipe(gulp.dest('app/vendor'))
+    .pipe(gulp.dest('src/vendor'))
 })
 
 //Copiar arquivos de fontAwesome para Dev
 gulp.task('fontsDist', function () {
-    return gulp.src('app/fonts/**/*')
+    return gulp.src('src/fonts/**/*')
         .pipe(gulp.dest('dist/fonts'))
 })
 
@@ -91,7 +91,7 @@ gulp.task('clean:dist', function () {
 
 //Tarefa do Watch
 gulp.task('watch', ['browserSync', 'sass'], function () {
-    gulp.watch("app/scss/**/*.scss", ['sass'])
+    gulp.watch("src/scss/**/*.scss", ['sass'])
 })
 
 //Executar tarefas de Desenvolvimento
