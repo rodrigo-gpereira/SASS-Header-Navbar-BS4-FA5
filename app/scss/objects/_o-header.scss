@@ -33,10 +33,10 @@
 //o-social-list
 
 .o-logo {
-    >.logo-img {
+    > svg {
         @include media-breakpoint-up(sm) {
-            max-height: 68px;
-            margin: 5px auto;
+            max-height: 58px;
+            margin: 10px auto;
             display: block;
         }
     }
@@ -48,7 +48,7 @@
     display: flex;
     @extend .u-reset-ul;
     justify-content: center;
-    color: #000;
+    color: gray("800");
     align-items: center;
 
     @include media-breakpoint-up(md) {
@@ -71,7 +71,7 @@
         top: -7px;
         font-size: 28px;
         margin-right: 10px;
-        color: $primary;
+        color: theme-color("primary");;
     }
 
     >.o-info-wrapper {
@@ -87,13 +87,13 @@
     display: inline-block;
 
     >.title {
-        font-weight: 600;
+        font-weight: $font-weight-bold;
         margin: 0px;
     }
 
     >.subtitle {
         margin: 0px;
-        color: #333;
+        color: gray("700");
     }
 }
 
@@ -133,6 +133,6 @@
 
 .o-mobile-icon {
     font-size: 1.8rem;
-    color: $primary;
+    color: theme-color("primary");;
     display: block;
 }
